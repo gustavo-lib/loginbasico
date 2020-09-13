@@ -8,13 +8,39 @@
     <!---->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+        <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <!---->
+
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
-<body>
-    <div class="modal-dialog bg-dark">
-        hola
+<body class="">
+    <div class="modal-dialog bg-dark mt-25">
+        <div class="modal-content mt-10 ">
+            <div class="col-sm-8 main-section">
+                <div class="col-12 user-img">
+                    <img src="img/user.png" />
+                </div>
+                <form class="col-12" th:action="@{/login}" method="get">
+                    <div class="form-group" id="user-group">
+                        <input type="text" class="form-control" placeholder="Nombre de usuario" name="username" />
+                    </div>
+                    <div class="form-group" id="contrasena-group">
+                        <input type="password" class="form-control" placeholder="Contrasena" name="password" />
+                    </div>
+                    <button type="submit" class="btn btn-success"><i class="fas fa-sign-in-alt"></i> Ingresar </button>
+                </form>
+                <div class="col-12 forgot">
+                    <a href="#">Recordar contrasena?</a>
+                </div>
+                <div class="col-12 forgot">
+                    <a href="#">Nuevo Usuario</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!---->
